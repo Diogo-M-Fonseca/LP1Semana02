@@ -15,10 +15,13 @@ namespace Cilindro
             double altura = double.Parse(rread);
             double raio = double.Parse(read);
 
-            double v = Math.PI * Math.Pow(raio,2)*altura;
+            double v = Math.PI * Math.Pow(raio,2)*altura; // V=pi * r^2 * a
 
 
-            double sa = 2*Math.PI*raio*(raio + altura);
+            double sa = 2*Math.PI*raio*(raio + altura); // Sa=2pi*r*(r+a)
+
+            Console.WriteLine($"{v:f3}"); // lembrar de tirar duvida sobre f3
+            Console.WriteLine($"{sa:f3}");
 
 
 
