@@ -51,7 +51,9 @@ namespace ValoresEspeciais
             Console.WriteLine(f+1);
             Console.WriteLine(f*2);
 
-            
+            float f1, f2; // lembrar de tirar duvidas sobre underflow
+            f1 = f2 = 20000.0f;
+            Console.WriteLine(f1==f2 + 0.00001f);
         }
     }
 }
