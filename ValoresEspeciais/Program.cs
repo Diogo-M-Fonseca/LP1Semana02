@@ -46,6 +46,12 @@ namespace ValoresEspeciais
 
             uint u = uint.MaxValue; // overflow
             Console.WriteLine(u+1);
+
+            float f = float.MaxValue; //dois tipos differentes de overflow
+            Console.WriteLine(f+1);
+            Console.WriteLine(f*2);
+
+            
         }
     }
 }
