@@ -6,13 +6,12 @@ namespace GuessTheNumber
     {
         private static void Main(string[] args)
         {
+            bool a = true;
            int tentativa = 0;
-            while(true)
+           Random rnd = new Random();
+            int numberToGuess = rnd.Next(31);
+            while(a == true)
             {
-                
-                Random rnd = new Random();
-                int numberToGuess = rnd.Next(31);
-
                 Console.WriteLine("inserir um numero inteiro entre 0 e 30: ");
                 string read = Console.ReadLine();
                 int rread = int.Parse(read);
@@ -35,9 +34,13 @@ namespace GuessTheNumber
                     Console.WriteLine("o numero é menor que o numero aleatorio");
                     tentativa += 1;
                 }
-                
+                else if (rread == numberToGuess)
+                {
+                    Console.WriteLine($"Encontrou o numero {numberToGuess}, depois de {tentativa} tentativas");
+                    a = false;
+                }
+
             }
-            }
-        }
+         }
     }
 }
