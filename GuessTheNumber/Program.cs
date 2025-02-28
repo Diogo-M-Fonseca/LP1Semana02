@@ -12,7 +12,7 @@ namespace GuessTheNumber
             int numberToGuess = rnd.Next(31);
             while(a == true)
             {
-                Console.WriteLine("Choose a number between 0 and 30: ");
+                Console.WriteLine("insert a number: ");
                 string read = Console.ReadLine();
                 int rread = int.Parse(read);
                  
@@ -22,18 +22,18 @@ namespace GuessTheNumber
                 }
                 else if (rread > numberToGuess)
                 {
-                    Console.WriteLine($"number is lower than {rread}. Try again");
+                    Console.WriteLine($"number is lower than {rread}. Try again.");
                     tentativa += 1;
                 }
                 else if (rread < numberToGuess)
                 {
-                    Console.WriteLine($"number is higher than {rread}. Try again");
+                    Console.WriteLine($"number is higher than {rread}. Try again.");
                     tentativa += 1;
                 }
                 else if (rread == numberToGuess)
                 {
                     tentativa += 1;
-                    Console.WriteLine($"you found the hidden number {numberToGuess} after {tentativa} tries");
+                    Console.WriteLine($"you found the hidden number {numberToGuess} after {tentativa} tries.");
                     a = false;
                 }
 
