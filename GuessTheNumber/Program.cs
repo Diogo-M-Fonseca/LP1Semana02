@@ -36,6 +36,7 @@ namespace GuessTheNumber
                 }
                 else if (rread == numberToGuess)
                 {
+                    tentativa += 1;
                     Console.WriteLine($"Encontrou o numero {numberToGuess}, depois de {tentativa} tentativas");
                     a = false;
                 }
